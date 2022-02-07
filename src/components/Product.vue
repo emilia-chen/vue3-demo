@@ -10,7 +10,7 @@
     >
       <p class="item_top box">
         <i class="lt">{{item.name}}</i>
-        <i class="gt">{{item.price}}</i>
+        <i class="gt">{{item.price}}{{item.unit}}</i>
       </p>
       <p class="item_bottom">{{item.desc}}</p>
     </div>
@@ -24,6 +24,7 @@ export default {
     items: Object
   },
   setup(props, context) {
+    console.log('props',props)
     const title = computed(() => {
       return props.items ? props.items.title : "";
     });

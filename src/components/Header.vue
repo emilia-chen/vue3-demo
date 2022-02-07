@@ -2,7 +2,7 @@
   <div class="header">
     <a class="back" v-if="has_back" @click="goBack">返回</a>
     {{title}}
-    <a class="login" v-if="has_login" @click="login">登录</a>
+    <a class="login" v-if="has_login" @click="login">登录1</a>
   </div>
 </template>
 <script>
